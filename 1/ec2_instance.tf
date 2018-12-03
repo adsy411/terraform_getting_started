@@ -3,7 +3,7 @@
 #######################################################################
 # "shared_credentials_file = "/home/brightlab_team/.aws/credentials"  #
 #  here this line will communicate with default aws credentials       #
-####################################################################### 
+#######################################################################
 
 
 provider "aws" {
@@ -25,4 +25,5 @@ resource "aws_instance" "web" {
 ################################
 # $terraform init              #
 # $terraform plan              #
+# $terraform destroy           #
 ################################
