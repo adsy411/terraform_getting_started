@@ -3,12 +3,14 @@
 ###   here we defined regions variable                      #
 #############################################################
 
-
 region = "us-east-1"
 
 
 
 shared_credentials_file = "/home/brightlab_team/.aws/credentials"
+
+
+profile = "terraform"
 
 
 
