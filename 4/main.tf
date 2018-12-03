@@ -3,9 +3,9 @@
 ###   here we defined regions variable those are defined in #
 ###   "variables.tfvars"                                    #
 #############################################################
-variable "region"
-variable "shared_credentials_file"
-variable "profile"
+variable "region" {}
+variable "shared_credentials_file"  {}
+variable "profile"  {}
 variable "my_ami" {
   type = "map"
 }
