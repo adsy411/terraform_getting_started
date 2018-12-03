@@ -1,19 +1,16 @@
 ### basic terraform script for ec2-instance
 
-# provider "aws" {
-#   access_key           = "AKIAISLZ3MBNU4XHRX3A"
-#   secret_key           = "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"
-#   region               = "us-east-2"
-# }
-
-
-resource "aws_instance" "test" {
-  ami                  = "ami-0653e888ec96eab9b"
-  instance_type        = "t2.micro"
+provider "aws" {
+  region                  = "us-east-2"
+  shared_credentials_file = "/home/brightlab_team/.aws/credentials"
+  profile                 = "terraform"
 }
 
 
-#########################################################
-##   ubuntu16.04 LTS   = ami-0653e888ec96eab9b         ##
-##   instance_type     = t2.micro                      ##
-#########################################################
+resource "aws_instance" "web" {
+  ami = "ami-023c8dbf8268fb3ca"
+  instance_type = "t2.micro"
+  tags {
+    Name = "eralabs"
+  }
+}
