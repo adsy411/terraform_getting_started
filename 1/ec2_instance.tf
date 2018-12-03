@@ -1,5 +1,11 @@
 ### basic terraform script for ec2-instance
 
+#######################################################################
+# "shared_credentials_file = "/home/brightlab_team/.aws/credentials"  #
+#  here this line will communicate with default aws credentials       #
+####################################################################### 
+
+
 provider "aws" {
   region                  = "us-east-2"
   shared_credentials_file = "/home/brightlab_team/.aws/credentials"
@@ -14,3 +20,9 @@ resource "aws_instance" "web" {
     Name = "eralabs"
   }
 }
+
+
+################################
+# $terraform init              #
+# $terraform plan              #
+################################
