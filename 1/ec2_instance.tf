@@ -1,10 +1,10 @@
 ### basic terraform script for ec2-instance
 
-provider "aws" {
-  access_key           = "AKIAISLZ3MBNU4XHRX3A"
-  secret_key           = "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"
-  region               = "us-east-2"
-}
+# provider "aws" {
+#   access_key           = "AKIAISLZ3MBNU4XHRX3A"
+#   secret_key           = "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"
+#   region               = "us-east-2"
+# }
 
 
 resource "aws_instance" "test" {
