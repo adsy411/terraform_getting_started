@@ -12,7 +12,7 @@ variable "region" {
 #############################################################
 priovider "aws" {
   region                      = "${var.region}"
-  shared_credential_file      = "~/.aws/credentials"
+  shared_credential_file      = "/home/brightlab_team/.aws/credentials"
   profile                     = "terraform"
 }
 
