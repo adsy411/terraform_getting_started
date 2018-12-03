@@ -12,7 +12,7 @@ variable "region" {
 #############################################################
 provider "aws" {
   region                      = "${var.region}"
-  shared_credentials_file      = "/home/brightlab_team/.aws/credentials"
+  shared_credentials_file     = "/home/brightlab_team/.aws/credentials"
   profile                     = "terraform"
 }
 
@@ -21,8 +21,17 @@ provider "aws" {
 #############################################################
 resource "aws_instance" "test" {
   ami                         = "ami-0653e888ec96eab9b"
-  instance_type               = "t1.micro"
+  instance_type               = "t2.micro"
   tags {
     Name = "test"
   }
 }
+
+
+##############################################################
+### Steps to reproduce output                                #
+### $terraform init                                          #
+### $terraform plan                                          #
+### $terrafrom apply                                         #
+### $terraform destroy                                       #
+##############################################################
