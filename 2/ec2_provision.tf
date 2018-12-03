@@ -10,7 +10,7 @@ variable "region" {
 #############################################################
 #### Providers config                                       #
 #############################################################
-priovider "aws" {
+provider "aws" {
   region                      = "${var.region}"
   shared_credentials_file      = "/home/brightlab_team/.aws/credentials"
   profile                     = "terraform"
