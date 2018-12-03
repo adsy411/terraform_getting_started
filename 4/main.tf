@@ -34,8 +34,8 @@ resource "aws_instance" "test" {
 
 ##############################################################
 ### Steps to reproduce output                                #
-### $terraform init                                          #
-### $terraform plan                                          #
-### $terrafrom apply                                         #
-### $terraform destroy                                       #
+### $terraform plan -var-file=variables.tfvars               #
+### $terraform plan -var-file=variables.tfvars               #
+### $terraform apply -var-file=variables.tfvars              #
+### $ terraform destroy -var-file=variables.tfvars           #
 ##############################################################
